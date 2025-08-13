@@ -16,7 +16,7 @@ body {
 /* Navigation */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* This ensures consistent alignment */
   align-items: center;
   padding: 1rem 2rem;
   background-color: #fff;
@@ -348,4 +348,63 @@ body {
   font-weight: 700;
   color: #1f2937;
   margin-bottom: 1rem;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+      width: 100%;
+  }
+
+  .nav-links li {
+      width: 100%;
+      text-align: center;
+  }
+
+  .nav-links li a {
+      display: block;
+      padding: 10px;
+      border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .hero {
+      height: 250px;
+  }
+
+  .product-grid {
+      display: block; /* Changes to a block layout for mobile */
+  }
+
+  .product-card {
+      width: 100%; /* Makes product cards full-width on mobile */
+      margin-bottom: 20px;
+  }
+
+  .about-content-wrapper {
+      flex-direction: column;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+      padding: 1rem 1.5rem;
+  }
+  
+  .nav-links {
+      gap: 1rem;
+  }
+  
+  .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
