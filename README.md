@@ -1,2 +1,2 @@
-# crafty-test
+# nakkashi-test
 just a static website
