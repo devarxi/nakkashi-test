@@ -4,7 +4,8 @@
 /* Global and body styling */
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    /* Updated font stack to use Helvetica Neue */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #f9fafb;
     background-image:
         linear-gradient(to right, #e5e7eb 1px, transparent 1px),
@@ -33,8 +34,8 @@ body {
     list-style: none;
     display: flex;
     gap: 2rem;
-    margin: 0; /* Important for consistency */
-    padding: 0; /* Important for consistency */
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li a {
@@ -73,7 +74,7 @@ body {
 
 /* Products */
 .products {
-    padding: 40px 20px; /* Adjusted padding for smaller screens */
+    padding: 40px 20px;
     background-color: #f9fafb;
     text-align: center;
 }
@@ -82,9 +83,9 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    justify-content: center; /* Center the grid items */
-    max-width: 1200px; /* Limit max width for large screens */
-    margin: 20px auto; /* Center the grid container */
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
 .product-card {
@@ -148,7 +149,7 @@ body {
     }
     
     .hero {
-        height: 250px; /* Reduced height for mobile */
+        height: 250px;
     }
 }
 
